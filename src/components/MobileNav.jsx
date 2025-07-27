@@ -7,7 +7,7 @@ import { TbMessage2Question } from "react-icons/tb";
 
 function MobileNav() {
   return (
-    <div className="bg-[#551abb] text-[#ffffff99] grid grid-cols-5 text-[12px]">
+    <div className="bg-[#551abb] text-[#ffffff99] block md:hidden grid grid-cols-5 text-[12px]">
       <p className="flex flex-col justify-center items-center py-4  gap-2">
         <HiHome className="text-xl" /> Home
       </p>

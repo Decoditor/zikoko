@@ -4,7 +4,7 @@ import { BsDot } from "react-icons/bs";
 
 function Hero() {
   return (
-    <div className="w-full h-full grid gap-10">
+    <div className="w-full h-full grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6">
       {hero.map((item, idx) => (
         <div className="grid gap-4  py-8 border-b-4" key={idx}>
           <img src={item.img} alt="" className="aspect-square rounded-lg" />

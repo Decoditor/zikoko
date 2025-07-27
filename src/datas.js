@@ -16,6 +16,13 @@ import vid4 from "./assets/vid4.png";
 import vid5 from "./assets/vid5.png";
 import vid6 from "./assets/vid6.png";
 import vid7 from "./assets/vid7.png";
+import cat1 from "./assets/cat1.png";
+import cat2 from "./assets/cat2.png";
+import cat3 from "./assets/cat3.png";
+import cat4 from "./assets/cat4.png";
+import cat5 from "./assets/cat5.png";
+import cat6 from "./assets/cat6.png";
+import cat7 from "./assets/cat7.png";
 
 export const hero = [
   {
@@ -47,7 +54,7 @@ export const hero = [
 export const latest = [
   {
     img: lat1,
-    category: "POP",
+    category: "FUNDS",
     title:
       "Jim Iyke’s Bizarre Birthday Post to Kate Henshaw Has the Internet Split",
     creator: "Adaora Obeleagu",
@@ -55,7 +62,7 @@ export const latest = [
   },
   {
     img: lat2,
-    category: "ANNOUNCEMENTS",
+    category: "Latest Stories",
     title:
       "Introducing PayApp by UCL: Revolutionising cross-Border tuition payments for global students",
     creator: "Partner",
@@ -63,7 +70,7 @@ export const latest = [
   },
   {
     img: lat3,
-    category: "ANNOUNCEMENTS",
+    category: "FUNDS",
     title:
       "Tecno Spark 40 Series: A Stylish Revolution for Nigeria’s Trendsetters",
     creator: "Partner",
@@ -71,7 +78,7 @@ export const latest = [
   },
   {
     img: lat4,
-    category: "ANNOUNCEMENTS",
+    category: "Latest Stories",
     title:
       "Why Everyone’s Talking About the InvestBeta Game Show – And What It Means for Young Investors",
     creator: "Partner",
@@ -79,7 +86,7 @@ export const latest = [
   },
   {
     img: lat5,
-    category: "SHIPS",
+    category: "FUNDS",
     title:
       "I Caught My Ex With Someone Else Right After He Begged Me to Take Him Back",
     creator: "Adey6inka Oduntayo",
@@ -87,7 +94,7 @@ export const latest = [
   },
   {
     img: lat7,
-    category: "MONEY",
+    category: "Latest Stories",
     title:
       "I Started a Business While on a UK Student Visa — Then Lost Everything",
     creator: "Adeyinka Oduntayo",
@@ -95,14 +102,42 @@ export const latest = [
   },
   {
     img: lat6,
-    category: "QUIZZES",
+    category: "Latest Stories",
     title: "QUIZ: Which “To Kill a Monkey” Character Are You Most Like?",
     creator: "Adey6inka Oduntayo",
     date: "July 21, 2025",
   },
   {
     img: lat8,
-    category: "SHIPS",
+    category: "FUNDS",
+    title: "I Spent Years Looking For My Dead Fiancée In Other Women",
+    creator: "Adey6inka Oduntayo",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat8,
+    category: "GBEDU",
+    title: "I Spent Years Looking For My Dead Fiancée In Other Women",
+    creator: "Adey6inka Oduntayo",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat8,
+    category: "GBEDU",
+    title: "I Spent Years Looking For My Dead Fiancée In Other Women",
+    creator: "Adey6inka Oduntayo",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat8,
+    category: "GBEDU",
+    title: "I Spent Years Looking For My Dead Fiancée In Other Women",
+    creator: "Adey6inka Oduntayo",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat8,
+    category: "GBEDU",
     title: "I Spent Years Looking For My Dead Fiancée In Other Women",
     creator: "Adey6inka Oduntayo",
     date: "July 21, 2025",
@@ -154,3 +189,128 @@ export const vidcontent = [
       "On this Love Life Valentine Special, we bring back three couples - one now with kids, one now married and the last, still best friends - on how well they now know and love each other. Here's how their relationships have evolved in the last five years.",
   },
 ];
+
+export const categories = [
+  {
+    img: cat1,
+    categories: "General",
+  },
+  {
+    img: cat2,
+    categories: "Gist",
+  },
+  {
+    img: cat3,
+    categories: "Her",
+  },
+  {
+    img: cat4,
+    categories: "Inside life",
+  },
+  {
+    img: cat5,
+    categories: "Made in Nigeria",
+  },
+  {
+    img: cat6,
+    categories: "Man Dem",
+  },
+  {
+    img: cat7,
+    categories: "Latest Stories",
+  },
+  {
+    img: cat1,
+    categories: "General",
+  },
+  {
+    img: cat2,
+    categories: "Gist",
+  },
+  {
+    img: cat3,
+    categories: "Her",
+  },
+  {
+    img: cat4,
+    categories: "Inside life",
+  },
+  {
+    img: cat5,
+    categories: "Made in Nigeria",
+  },
+  {
+    img: cat6,
+    categories: "Man Dem",
+  },
+  {
+    img: cat7,
+    categories: "Quizzes",
+  },
+  {
+    img: cat1,
+    categories: "General",
+  },
+  {
+    img: cat2,
+    categories: "Gist",
+  },
+  {
+    img: cat3,
+    categories: "Her",
+  },
+  {
+    img: cat4,
+    categories: "Inside life",
+  },
+  {
+    img: cat5,
+    categories: "Made in Nigeria",
+  },
+  {
+    img: cat6,
+    categories: "Man Dem",
+  },
+  {
+    img: cat7,
+    categories: "Quizzes",
+  },
+];
+
+export const quiz = [
+  {
+    img: lat1,
+    category: "QUIZZES",
+    title: "QUIZ: This Quiz Knows Whether You’re a Gen Z, Millennial or Boomer",
+    creator: "Adaora Obeleagu",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat2,
+    category: "QUIZZES",
+    title: "QUIZ: Which “To Kill a Monkey” Character Are You Most Like?",
+    creator: "Partner",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat3,
+    category: "QUIZZES",
+    title: "QUIZ: How Well Do You Know Nigeria’s Current Affairs? (Edition 5)",
+    creator: "Partner",
+    date: "July 21, 2025",
+  },
+  {
+    img: lat4,
+    category: "ANNOUNCEMENTS",
+    title: "Only a Megamind Can Score 7/10 on This Cowbellpedia STEM Challenge",
+    creator: "Partner",
+    date: "July 21, 2025",
+  },
+];
+
+export function textReducer(text, words) {
+  if (text.length > words) {
+    return text.slice(0, words) + "...";
+  }
+  return text;
+}
