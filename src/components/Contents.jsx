@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Contents({ content }) {
   return (
     <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
-      {content.map((item, idx) => (
-        <div
+      {content.map((item) => (
+        <Link
+          to={`/${item.category.toLowerCase().split(" ").join("")}/${item.id}`}
           className="flex md:grid gap-3 items-center md:content-start"
-          key={idx}
+          key={item.id}
         >
           <img
             src={item.img}
@@ -23,7 +25,7 @@ function Contents({ content }) {
               <span className="text-[8px] opacity-50">{item.date}</span>
             </p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

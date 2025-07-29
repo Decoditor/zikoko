@@ -1,6 +1,7 @@
 import { Dot } from "lucide-react";
 import React from "react";
 import { textReducer } from "../datas";
+import { Link } from "react-router-dom";
 
 function Boxes({ categories, category }) {
   const items = categories.filter((item) => item.category == category);
@@ -12,8 +13,14 @@ function Boxes({ categories, category }) {
         {categoryText}
       </h1>
       <div className="text-[20px] grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-6 space-y-12">
-        {items.map((item, id) => (
-          <div key={id} className="flex-col flex gap-5 ">
+        {items.map((item) => (
+          <Link
+            to={`/${item.category.toLowerCase().split(" ").join("")}/${
+              item.id
+            }`}
+            key={item.id}
+            className="flex-col flex gap-5 "
+          >
             <img
               src={item.img}
               alt=""
@@ -30,7 +37,7 @@ function Boxes({ categories, category }) {
                 <span className="opacity-50"> {item.date} </span>
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <button className="text-[18.8px] text-[#570095] border border-[#570095] mb-10 hover:bg-[#570095] hover:text-white py-4 w-full rounded cursor-pointer">

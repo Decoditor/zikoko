@@ -6,8 +6,9 @@ import { BsInstagram, BsLinkedin, BsTiktok, BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
 import Input from "./ui/input";
+import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ dispatch, isPending }) {
   const [openNav, setOpenNav] = useState(false);
   const [isInputVisible, setIsInputVisible] = useState(false);
   const searchRef = useRef(null);
@@ -17,13 +18,31 @@ function Header() {
   useEffect(() => {
     searchRef.current?.focus();
   }, [isInputVisible]);
+
+  const categories = [
+    "Quizzes",
+    "Inside Life",
+    "Citizen",
+    "Money",
+    "Her",
+    "Man Dem",
+    "Pop",
+    "Ships",
+    "Chopist",
+    "Aluta and Chill",
+  ];
   return (
     <div className="grid bg-white fixed w-full z-20">
       <div className="flex justify-between lg:px-[6rem] px-4 py-1 items-center md:border-b border-gray-300">
-        <img src={Logo} alt="" className="w-[125px] h-[25px]" />
+        <Link to="/">
+          <img src={Logo} alt="" className="w-[125px] h-[25px]" />
+        </Link>
 
         <div className="flex gap-2 items-center">
-          <form className="h-[3rem] relative lg:w-[40rem] md:w-[20rem]">
+          <form
+            action={dispatch}
+            className="h-[3rem] relative lg:w-[40rem] md:w-[20rem]"
+          >
             {isInputVisible && (
               <Input
                 name="search"
@@ -43,36 +62,17 @@ function Header() {
       </div>
 
       <ul className="md:flex hidden md:px-4 sm:hidden lg:px-[6rem] text-gray-600 md:block justify-center text-sm lg:text-lg">
-        <li className="lg:px-8 md:px-4 hover:bg-purple-200 cursor-pointer py-3">
-          Quizzes
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Inside Life
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Citizen
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Money
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Her
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Man Dem
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Pop
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Ships
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Chopist
-        </li>
-        <li className="lg:px-8 md:px-4 hover:bg-purple-100 cursor-pointer py-4">
-          Aluta and Chill
-        </li>
+        {categories.map((category, idx) => (
+          <Link
+            to={`/categories/${category.split(" ").join("").toLowerCase()}`}
+            key={idx}
+          >
+            <li className="lg:px-8 md:px-4 hover:bg-purple-200 cursor-pointer py-3">
+              {category}
+            </li>
+          </Link>
+          // );
+        ))}
       </ul>
       {openNav && (
         <nav className="text-[#570095] fixed right-0 z top-0 z-1 h-full w-full flex">

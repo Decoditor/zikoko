@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import Categories from "./components/Categories.jsx";
 import Category from "./category/Category.jsx";
+import Post from "./content/Post.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "categories/:category",
+    path: "/categories/:category",
     element: <Category />,
+  },
+  {
+    path: "/:category/:post",
+    element: <Post />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

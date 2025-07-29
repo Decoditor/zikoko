@@ -19,7 +19,7 @@ function CatContent({
   return (
     <div className="mb-40">
       <div
-        className={`bg-[${bgColor}] h-[20rem] md:h-[25rem] relative flex flex-col items-center lg:px-[6rem]`}
+        className={`bg-[#3c95fa] h-[20rem] md:h-[25rem] relative flex flex-col items-center lg:px-[6rem]`}
       >
         <img src={catBg} alt="" className="h-full object-cover absolute" />
         <img

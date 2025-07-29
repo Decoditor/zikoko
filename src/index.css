@@ -58,6 +58,7 @@
 body {
   margin: 0;
   font-family: "Cabin", sans-serif;
+  background: #fdfbff;
   /* display: flex;
   place-items: center;
   min-width: 320px;
@@ -146,4 +147,23 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.ant-select-selector {
+  padding: 25px 10px !important;
+  border-radius: 0px !important;
+  /* border-color: #6f00be60 !important; */
+}
+.ant-select-item-option {
+  padding: 15px !important;
+  border-bottom: 1px solid rgb(156, 156, 156);
+  border-radius: 0px !important;
+}
+.custom-card:hover {
+  box-shadow: 1px 20px 40px 0px rgba(53, 52, 52, 0.354);
+  background: white;
+}
+.custom-card {
+  background: transparent;
+  border: none;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import CatContent from "./CatContent";
-import her1 from "./../assets/her1.png";
-import her2 from "./../assets/her2.png";
+import pop1 from "./../assets/pop1.png";
+import pop2 from "./../assets/pop2.png";
 
 function Pop() {
   let topContent =
@@ -17,8 +17,8 @@ function Pop() {
   ];
   return (
     <CatContent
-      topRightImg={her1}
-      bottomImg={her2}
+      topRightImg={pop1}
+      bottomImg={pop2}
       category={"Pop"}
       topContent={topContent}
       links={links}
